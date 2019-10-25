@@ -25,7 +25,7 @@ const Main: () => React$Node = () => {
         <View style={{padding: 15, alignSelf: 'stretch',}}>
           <TouchableOpacity
             style={styles.button}
-            onPress={() => {Actions.informations()}}
+            onPress={() => {Actions.informationsVehicle()}}
           >
             <View style={styles.containerOptions}>
               <Icon name="local-shipping" size={30} color="#FF4500" style={styles.icons} />
@@ -37,7 +37,7 @@ const Main: () => React$Node = () => {
         <View style={{padding: 15, alignSelf: 'stretch',}}>
           <TouchableOpacity
             style={styles.button}
-            onPress={() => {Actions.informations()}}
+            onPress={() => {Actions.informationsVehicle()}}
           >
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
               <Icon name="directions-car" size={30} color="#FF4500" style={styles.icons} />
@@ -49,7 +49,7 @@ const Main: () => React$Node = () => {
         <View style={{padding: 15, alignSelf: 'stretch',}}>
           <TouchableOpacity
             style={styles.button}
-            onPress={() => {Actions.informations()}}
+            onPress={() => {Actions.informationsVehicle()}}
           >
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
               <Icon name="motorcycle" size={30} color="#FF4500" style={styles.icons} />

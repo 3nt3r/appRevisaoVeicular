@@ -17,36 +17,46 @@ const Informations: () => React$Node = () => {
       </View>
 
       <TextInput
-          autoCapitalize="none"
-          autoCorrect={false}
-          placeholder="Insira a marca do seu veículo"
-          placeholderTextColor="#999"
-          style={styles.input}
-          value={1}
-          onChangeText={texto => {return false}}
+        autoCapitalize="none"
+        autoCorrect={false}
+        placeholder="Insira a marca do seu veículo"
+        placeholderTextColor="#999"
+        style={styles.input}
+        value={1}
+        onChangeText={texto => {return false}}
       />
 
       <TextInput
-          autoCapitalize="none"
-          autoCorrect={false}
-          placeholder="Insira o modelo do seu veículo"
-          placeholderTextColor="#999"
-          style={styles.input}
-          value={1}
-          onChangeText={texto => {return false}}
+        autoCapitalize="none"
+        autoCorrect={false}
+        placeholder="Insira o modelo do seu veículo"
+        placeholderTextColor="#999"
+        style={styles.input}
+        value={1}
+        onChangeText={texto => {return false}}
       />
 
       <TextInput
-          autoCapitalize="none"
-          autoCorrect={false}
-          placeholder="Média de KM rodados por mês"
-          placeholderTextColor="#999"
-          style={styles.input}
-          value={1}
-          onChangeText={texto => {return false}}
+        autoCapitalize="none"
+        autoCorrect={false}
+        placeholder="KM atual do veículo"
+        placeholderTextColor="#999"
+        style={styles.input}
+        value={1}
+        onChangeText={texto => {return false}}
       />
 
-      <TouchableOpacity onPress={() => {return false}} style={styles.button}>
+      <TextInput
+        autoCapitalize="none"
+        autoCorrect={false}
+        placeholder="Média de KM rodados por mês"
+        placeholderTextColor="#999"
+        style={styles.input}
+        value={1}
+        onChangeText={texto => {return false}}
+      />
+
+      <TouchableOpacity onPress={() => {Actions.items()}} style={styles.button}>
           <Text style={styles.buttonText}> Continuar </Text>
       </TouchableOpacity>
 
