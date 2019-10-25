@@ -18,48 +18,48 @@ const ExchangeParts: () => React$Node = () => {
         </View>
 
         <View>
-          <View style={{flexDirection: 'row', alignItems: 'center', padding: 10}}>
+          <View style={styles.containerItems}>
             <Icon name="build" size={30} color="#FF4500" style={styles.icons} />
             <Text> Óleo do motor </Text>
           </View>
 
-          <View style={{flexDirection: 'row', alignItems: 'center', padding: 10}}>
+          <View style={styles.containerItems}>
             <Icon name="done" size={30} color="#FF4500" style={styles.icons} />
             <Text> Óleo da transmissão </Text>
           </View>
 
-          <View style={{flexDirection: 'row', alignItems: 'center', padding: 10}}>
+          <View style={styles.containerItems}>
             <Icon name="done" size={30} color="#FF4500" style={styles.icons} />
             <Text> Pressão dos pneus </Text>
           </View>
 
-          <View style={{flexDirection: 'row', alignItems: 'center', padding: 10}}>
+          <View style={styles.containerItems}>
             <Icon name="build" size={30} color="#FF4500" style={styles.icons} />
             <Text> Troca dos pneus </Text>
           </View>
 
-          <View style={{flexDirection: 'row', alignItems: 'center', padding: 10}}>
+          <View style={styles.containerItems}>
             <Icon name="done" size={30} color="#FF4500" style={styles.icons} />
             <Text> Pastilhas de freio </Text>
           </View>
 
-          <View style={{flexDirection: 'row', alignItems: 'center', padding: 10}}>
+          <View style={styles.containerItems}>
             <Icon name="build" size={30} color="#FF4500" style={styles.icons} />
             <Text> Fluido de freio </Text>
           </View>
 
-          <View style={{flexDirection: 'row', alignItems: 'center', padding: 10}}>
+          <View style={styles.containerItems}>
             <Icon name="done" size={30} color="#FF4500" style={styles.icons} />
             <Text> Líquido de arrefecimento </Text>
           </View>
 
-          <View style={{flexDirection: 'row', alignItems: 'center', padding: 10}}>
+          <View style={styles.containerItems}>
             <Icon name="done" size={30} color="#FF4500" style={styles.icons} />
             <Text> Filtro de ar </Text>
           </View>
         </View>
 
-        <TouchableOpacity onPress={() => {return false}} style={styles.button}>
+        <TouchableOpacity onPress={() => {Actions.workshops()}} style={styles.button}>
             <Text style={styles.buttonText}> Oficinas </Text>
         </TouchableOpacity>
 
@@ -106,6 +106,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center'
   },
+  containerItems: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 10
+  }
 });
 
 export default ExchangeParts;
