@@ -101,7 +101,7 @@ const Items: () => React$Node = () => {
           onChangeText={texto => {return false}}
         />
 
-        <TouchableOpacity onPress={() => {return false}} style={styles.button}>
+        <TouchableOpacity onPress={() => {Actions.exchangeParts()}} style={styles.button}>
             <Text style={styles.buttonText}> Continuar </Text>
         </TouchableOpacity>
 
